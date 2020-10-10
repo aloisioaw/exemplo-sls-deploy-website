@@ -1,0 +1,58 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1584984703001",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "logs:*",
+                "dynamodb:CreateTable",
+                "dynamodb:DescribeTable",
+                "dynamodb:DeleteTable",
+                "lambda:*",
+                "cognito-idp:AdminCreateUser",
+                "cognito-idp:AdminDeleteUser",
+                "cognito-idp:AdminGetUser",
+                "cognito-idp:CreateUserPool",
+                "cognito-idp:CreateUserPoolClient",
+                "cognito-idp:DeleteUserPool",
+                "cognito-idp:DeleteUserPoolClient",
+                "cognito-idp:ListUserPoolClients",
+                "cognito-idp:UpdateUserPool",
+                "cognito-idp:UpdateUserPoolClient",
+                "execute-api:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "Stmt1584986102000",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateRole",
+                "iam:GetRole",
+                "iam:DeleteRole",
+                "iam:PassRole",
+                "iam:DetachRolePolicy",
+                "iam:AttachRolePolicy",
+                "iam:PutRolePolicy",
+                "iam:GetRolePolicy"
+            ],
+            "Resource": [
+                "arn:aws:iam::087203132684:*"
+            ]
+        },
+        {
+            "Sid": "Stmt1585046737000",
+            "Effect": "Allow",
+            "Action": [
+                "apigateway:*"
+            ],
+            "Resource": [
+                "arn:aws:apigateway:*::*"
+            ]
+        }
+    ]
+}

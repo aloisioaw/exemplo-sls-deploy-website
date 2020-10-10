@@ -1,0 +1,15 @@
+{
+  "name": "serverless-deploy-website",
+  "author": "Aloisio Arsego Wohlmeister <buildbreaker.aaw@gmail.com> (http://aloisioaw.github.io/)",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {},
+  "scripts": {
+    "hook:deploy:finalize": "sls client deploy --no-confirm"
+  },
+  "devDependencies": {
+    "serverless": "^2.3.0",
+    "serverless-finch": "^2.6.0",
+    "serverless-hooks": "^1.0.0"
+  }
+}

@@ -10,7 +10,7 @@ Nota: não utilize esse projeto em produção. Tudo o que estiver neste reposit�
 Rode o comando ´yarn´.
 
 ### Antes do deploy
-Trocar parte o body de reposta da Lambda.
+Trocar parte o body de reposta da Lambda(arquivo lambda/handler.js, onde estiver escrito "Usuário :D (Seu nome aqui)").
 
 ### Primeiro deploy
 Rode ´sls deploy´.
